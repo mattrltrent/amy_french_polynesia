@@ -56,10 +56,11 @@ class FoodTile extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 100,
-              child: Image.asset(
-                imagePath,
+            Flexible(
+              child: SizedBox(
+                child: Image.asset(
+                  imagePath,
+                ),
               ),
             ),
           ],
