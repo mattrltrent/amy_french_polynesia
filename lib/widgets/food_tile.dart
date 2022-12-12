@@ -36,23 +36,25 @@ class FoodTile extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  tileTitle,
-                  style: kBody.copyWith(color: Colors.black),
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.left,
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  tileBody,
-                  style: kBody.copyWith(color: Colors.black, fontSize: 15),
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.left,
-                ),
-              ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    tileTitle,
+                    style: kBody.copyWith(color: Colors.black),
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    tileBody,
+                    style: kBody.copyWith(color: Colors.black, fontSize: 15),
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                  ),
+                ],
+              ),
             ),
             SizedBox(
               height: 100,
