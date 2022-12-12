@@ -57,7 +57,7 @@ class FoodTile extends StatelessWidget {
             SizedBox(
               height: 100,
               child: Image.asset(
-                'assets/images/img-1.jpg',
+                imagePath,
               ),
             ),
           ],
