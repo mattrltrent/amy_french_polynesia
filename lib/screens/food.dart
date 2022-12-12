@@ -28,9 +28,9 @@ class _FoodScreenState extends State<FoodScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.blue, //Background color
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 21, 71, 157), // Change this color
+        backgroundColor: const Color.fromARGB(255, 21, 71, 157), // Accent color
         title: Text(
           "Food",
           style: kBody.copyWith(color: Colors.white),
@@ -44,88 +44,46 @@ class _FoodScreenState extends State<FoodScreen> {
             children: const [
               FoodTile(
                 imagePath: "imgpath",
-                popUpBody: "body of pop up",
-                popUpTitle: "title of pop up",
-                tileBody: "tile body text",
+                popUpBody:
+                    "« Firi Firi » est mangé généralement avec le café ou le chocolat chaud pour le petit déjeuner. C’est de Tahiti et a une odeur et goût de la noix de coco.",
+                popUpTitle: "Firi Firi",
+                tileBody: "Coconut-based donuts",
                 tileTitle: "Firi Firi",
               ),
               FoodTile(
                   imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
-                  tileTitle: "Rēti'a"),
-              FoodTile(
-                  imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
-                  tileTitle: "Rēti'a"),
-              FoodTile(
-                  imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
-                  tileTitle: "Rēti'a"),
-              FoodTile(
-                  imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
+                  popUpBody:
+                      "« Poisson Cru » est le plat national de la Polynésie française. C’est le poisson cru trempe dans le jus de citron vert et le lait de coco. C’est très bon.",
+                  popUpTitle: "Poisson Cru",
+                  tileBody: "Raw tuna",
                   tileTitle: "Poisson Cru"),
               FoodTile(
                   imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
-                  tileTitle: "Rēti'a"),
-              FoodTile(
-                  imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
+                  popUpBody:
+                      "« Pahua Taioro » est un plat est fondé sur les escargots ou les palourdes. Ils trempent dans l’eau douce et puis ils mélangent avec les amandes, la noix de coco, l’eau de mer et les crevettes.",
+                  popUpTitle: "Pahua Taioro",
+                  tileBody: "Snails or clams",
                   tileTitle: "Pahua Taioro"),
               FoodTile(
                   imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
+                  popUpBody:
+                      "« Poulet Fafa » est le poulet avec les pommes de terre et les feuilles de tara. Les feuilles cuisinent dans l’eau de mer enlever l’oxalate de calcium.",
+                  popUpTitle: "Poulet Fafa",
+                  tileBody: "Chicken with taro leaves",
                   tileTitle: "Poulet Fafa"),
               FoodTile(
                   imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
-                  tileTitle: "Tama'ara'a"),
-              FoodTile(
-                  imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
-                  tileTitle: "Fafaru"),
-              FoodTile(
-                  imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
-                  tileTitle: "Po'e"),
-              FoodTile(
-                  imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
-                  tileTitle: "Ma'a Tahiti"),
-              FoodTile(
-                  imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
+                  popUpBody:
+                      "« Chevreffes » sont les crevettes qui font la cuisine avec le lait de coco et la vanille. Ils sont une très populaire entrée en Polynésie française.",
+                  popUpTitle: "Chevreffes",
+                  tileBody: "Freshwater shrimp",
                   tileTitle: "Chevreffes"),
               FoodTile(
                   imagePath: "imgpath",
-                  popUpBody: "body of pop up",
-                  popUpTitle: "title of pop up",
-                  tileBody: "tile body text",
+                  popUpBody:
+                      "« Kato » est la biscuite qui prépare avec le lait de coco. C’est mangé souvent avec le café et sont très délicieux.",
+                  popUpTitle: "Kato",
+                  tileBody: "Coconut milk cookies",
                   tileTitle: "Kato"),
             ],
           ),

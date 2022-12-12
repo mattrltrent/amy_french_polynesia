@@ -13,7 +13,8 @@ class BottomNav extends StatefulWidget {
   State<BottomNav> createState() => _BottomNavState();
 }
 
-class _BottomNavState extends State<BottomNav> with SingleTickerProviderStateMixin {
+class _BottomNavState extends State<BottomNav>
+    with SingleTickerProviderStateMixin {
   late TabController tabController;
 
   @override
@@ -63,7 +64,7 @@ class _BottomNavState extends State<BottomNav> with SingleTickerProviderStateMix
           tabs: const [
             Tab(icon: Icon(CupertinoIcons.shopping_cart)),
             Tab(icon: Icon(CupertinoIcons.home)),
-            Tab(icon: Icon(CupertinoIcons.bandage)),
+            Tab(icon: Icon(CupertinoIcons.location_solid)),
           ],
         ),
       ),
