@@ -30,7 +30,7 @@ class _HelpScreenState extends State<HelpScreen> {
     return Scaffold(
       backgroundColor: Colors.redAccent, //Background color
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 21, 71, 157), // Accent color
+        backgroundColor: Color.fromARGB(255, 151, 21, 21), // Accent color
         title: Text(
           "Landmarks",
           style: kBody.copyWith(color: Colors.white),

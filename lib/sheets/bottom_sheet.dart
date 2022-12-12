@@ -6,6 +6,7 @@ void showInfoSheet(BuildContext context, String title, String body) {
     backgroundColor: Colors.transparent,
     context: context,
     builder: (context) => Container(
+      height: MediaQuery.of(context).size.height * .8,
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
@@ -16,36 +17,36 @@ void showInfoSheet(BuildContext context, String title, String body) {
         color: Colors.white,
         borderRadius: const BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)),
       ),
-      height: MediaQuery.of(context).size.height / 2,
-      width: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const SizedBox(height: 15),
-          Container(
-            height: 3,
-            width: 40,
-            decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.4),
-              borderRadius: const BorderRadius.all(Radius.circular(20)),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const SizedBox(height: 15),
+            Container(
+              height: 3,
+              width: 40,
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.4),
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
+              ),
             ),
-          ),
-          const Spacer(),
-          Text(
-            title,
-            style: kBody.copyWith(color: Colors.black),
-            overflow: TextOverflow.ellipsis,
-            textAlign: TextAlign.left,
-          ),
-          const SizedBox(height: 15),
-          Text(
-            body,
-            style: kBody.copyWith(color: Colors.black, fontSize: 15),
-            overflow: TextOverflow.ellipsis,
-            textAlign: TextAlign.left,
-          ),
-          const Spacer(),
-        ],
+            const Spacer(),
+            Text(
+              title,
+              style: kBody.copyWith(color: Colors.black),
+              textAlign: TextAlign.left,
+            ),
+            const SizedBox(height: 15),
+            Text(
+              body,
+              style: kBody.copyWith(color: Colors.black, fontSize: 25),
+              textAlign: TextAlign.left,
+            ),
+            const Spacer(),
+          ],
+        ),
       ),
     ),
   );
