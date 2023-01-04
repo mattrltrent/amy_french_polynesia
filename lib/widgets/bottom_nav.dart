@@ -13,8 +13,7 @@ class BottomNav extends StatefulWidget {
   State<BottomNav> createState() => _BottomNavState();
 }
 
-class _BottomNavState extends State<BottomNav>
-    with SingleTickerProviderStateMixin {
+class _BottomNavState extends State<BottomNav> with SingleTickerProviderStateMixin {
   late TabController tabController;
 
   @override
