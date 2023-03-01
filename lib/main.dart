@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const BottomNav(),
+      home: const SafeArea(child: BottomNav()),
     );
   }
 }
